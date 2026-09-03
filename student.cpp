@@ -77,7 +77,12 @@ class Student
         // ===== No los toques todavia - les toca mas adelante =====
 
         // TODO (Parte D): Constructor with parameters (name, id, gpa).
-
+        Student (string n, int i, double g)
+        {
+            setName(n);
+            setId(i);
+            setGpa(g);
+        }
         // TODO (Parte E): Destructor.
         // Imprime un mensaje indicando que el objeto Student con ese 'name' fue destruido.
 };
@@ -88,20 +93,24 @@ int main()
 
     // TODO (Parte C): Crea un Student usando el constructor default,
     // asigna valores con los setters, e imprime con printInfo().
-    Student s;
-    s.setName("Archivaldo");
-    s.setGpa(3.6);
-    s.setId(69420);
-    s.printInfo();
+    Student s1;
+    s1.setName("Archivaldo");
+    s1.setGpa(3.6);
+    s1.setId(69420);
+    s1.printInfo();
     // TODO (Parte C): Prueba setGpa() con un valor invalido (ej. 5.0)
     // y confirma que el mensaje de error aparece y el gpa no cambia.
 
-    //s.setGpa(66.0); //Invalid GPA, Archivaldo is not built like that.
-    
+    //s1.setGpa(66.0); //Invalid GPA, Archivaldo is not built like that.
+
     // ===== No lo toques todavia - le toca mas adelante =====
 
     // TODO (Parte D): Crea un segundo Student usando el constructor con
     // parametros, con datos dummy (ej. "Alice Smith", 1001, 3.7).
+    Student s2("Charlie Brown", 7249, 3.2);
+    cout << "Second Student Info: \n";
+    s2.printInfo();
+
 
     return 0;
 }
