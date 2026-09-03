@@ -36,6 +36,10 @@ class Student
             {
                 name = n;
             }
+            else
+            {
+                cout << "Error: name cannot be empty. \n";
+            }
         }
         // TODO (Parte C): setGpa(double g)
         // Solo asigna si g esta entre 0.0 y 4.0 (inclusive).
